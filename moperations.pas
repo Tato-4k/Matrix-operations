@@ -4,7 +4,7 @@ const A=4;
 type arreglo = array [1..A,1..A] of integer;
 var c: arreglo;i,j,m,n: integer;
 
-{*----------------------------------------*}
+{*-------TRASPOSE MATRIX------------------------*}
 procedure traspose(VAR arr: arreglo);
 var temp,i,j,k : integer;
 begin
@@ -20,8 +20,7 @@ begin
         k:=k+1;
     end;
 end;
-{*-----------------------------------------*}
-
+{*-------CHANGE ROW BY ROW--------------------*}
 procedure cfiles(var arr: arreglo;m,n: integer);
 var temp,i,j: integer;
 begin

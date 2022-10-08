@@ -1,2 +1,2 @@
 # Matrix-operations
-Trasposed Matrix, Change row by row
+Trasposed Matrix, Change row by row, Pascal

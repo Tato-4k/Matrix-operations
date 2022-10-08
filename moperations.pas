@@ -1,12 +1,11 @@
-program p9ej4;
+program moperations;
 
 const A=4;
 type arreglo = array [1..A,1..A] of integer;
 var c: arreglo;i,j,m,n: integer;
 
 {*----------------------------------------*}
-
-procedure traspuesta(VAR arr: arreglo);
+procedure traspose(VAR arr: arreglo);
 var temp,i,j,k : integer;
 begin
 	k:=0;
@@ -21,7 +20,6 @@ begin
         k:=k+1;
     end;
 end;
-
 {*-----------------------------------------*}
 
 procedure cfiles(var arr: arreglo;m,n: integer);
@@ -37,23 +35,6 @@ begin
     end;
 end;
 {*------------------------------------------*}
-
 begin
-    for i:=1 to A  do 
-        for j:=1 to A do read(c[i,j]);  
-    
-    writeln('Ingresar m y n:');
-    readln(m,n);
-    writeln('--------');
-    cfiles(c,m,n);
-    
-    
-    for i:=1 to (A) do
-        begin
-            for j:=1 to A do 
-            begin
-                write(c[i,j], '   ')
-            end;
-        writeln;
-        end;
+
 end.

@@ -21,7 +21,16 @@ begin
     end;
 end;
 {*---------------------------------------------*}
-
 begin
-
+  for i:=1 to A  do 
+    for j:=1 to A do read(c[i,j]); 
+    
+  for i:=1 to (A) do
+    begin
+      for j:=1 to A do 
+      begin
+        write(c[i,j], '   ')
+        writeln;
+      end;
+    end;
 end.
